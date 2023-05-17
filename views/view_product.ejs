@@ -1,0 +1,14 @@
+<table border="2px">
+ <tr>
+  <th>Product Name</th>
+  <th>Product Price</th>
+  <th>Category Name</th>
+ </tr>
+ <% allProduct.map(data => {%>
+ <tr>
+  <td><%= data.productName%></td>
+  <td><%= data.productPrice%></td>
+  <td><%= data.categoryName.category%></td>
+ </tr>
+ <% }) %>
+</table>
